@@ -1,0 +1,290 @@
+/* common.css is used for common parts style of all pages.  
+   TOC
+   1. General sytles and webfonts 
+   2. Header
+   3. Navigation Menu
+   4. Footer
+   5. Largescreen
+*/
+
+/* 1. General */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General icon size( Google+ and Yelp ) */
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* 2 Header */
+#mainHeader {
+    background-color: #A5DEFA;    
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+#mainHeader img {
+    float: left;
+    margin: 5px;
+}
+
+#mainHeader h3 {
+    color: #fff;
+    float: left;
+    margin-top: 30px;
+}
+
+#mainHeader nav {
+    margin-top: 30px;
+}
+
+#mainHeader li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #717171;
+}
+
+#mainHeader li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* 3. Navigation Menu */
+#mainHeader .menu {
+    list-style: none;
+    clear: both;
+    overflow: hidden;
+    max-height: 0;
+    background-color: #A5DEFA;
+    transition: max-height .2s ease-out;
+}
+
+/* Submenu */
+#mainHeader .menu ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: #f4f4f4;
+    z-index: 10;
+}
+
+#mainHeader .menu li{
+    position: relative;
+}
+
+#mainHeader .menu li:hover ul {
+    display: block;
+}
+
+#mainHeader .menu ul a:hover{
+    background-color: #E5E5E5;   
+}
+
+/* Menu icon */
+.navToggleLabel {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.navToggleLabel .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.navToggleLabel .navicon:before,
+.navToggleLabel .navicon:after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.navToggleLabel .navicon:before {
+    top: 5px;
+}
+
+.navToggleLabel .navicon:after {
+    top: -5px;
+}
+
+/* navToggle checkbox */
+
+input#navToggle {
+    display: none;
+}
+
+input#navToggle:checked ~ .menu {
+/*    display: block;*/
+    
+    max-height: 400px;
+}
+
+input#navToggle:checked ~ .navToggleLabel .navicon {
+    background: transparent;
+}
+
+input#navToggle:checked ~ .navToggleLabel .navicon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+input#navToggle:checked ~ .navToggleLabel .navicon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+footer {
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+footer .contactWrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0 10px 0; 
+}
+
+footer .contactWrapper h4 {
+    display: none;
+}
+
+footer .phone, footer .email {
+    background-color: #008AC5;
+    padding: 3px 20px;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    margin: 5px;
+}
+
+footer .phone img, footer .email img {
+    margin: 2px 10px;
+}
+
+footer .email a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .address {
+    display: none;
+}
+
+footer .rateWrapper .rateicon {
+    background-color: #008AC5;
+    border-radius: 10px;
+    width: 150px;
+    margin: 10px auto 20px;
+}
+
+footer .rateWrapper p:first-of-type {
+    display: none;
+}
+
+footer .rateWrapper p {
+    margin-bottom: 20px;
+}
+
+footer .serviceWrapper {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .navToggleLabel {
+        display: none;
+    } 
+    
+    #mainHeader .menu { 
+        clear: none;
+        max-height: none;
+        display: flex;
+        justify-content: flex-end;
+        overflow: visible;
+    }
+    
+    #mainHeader .menu ul{
+        left: 0px;
+        top: 60px;    
+    }
+    
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        font-size: 80%;
+    }
+    
+    footer .contactWrapper h4 {
+        display: block;
+        grid-area: hh;
+    }
+    
+    footer .address {
+        display: block;
+        grid-area: ad;
+    }
+    
+    footer .phone{
+        grid-area: tl;
+    } 
+    
+    footer .email {
+        grid-area: em;
+    }
+    
+    footer .contactWrapper {
+        padding: 10px;
+        display: grid;
+        grid-template-areas: 
+            'hh .'
+            'tl em'
+            'ad ad';
+    }
+    
+    footer .rateWrapper {
+        padding: 10px;
+    }
+    
+    footer .rateWrapper p:first-of-type {
+        display: block;
+    }
+    
+    footer .serviceWrapper {
+        display: block;
+        padding: 10px;
+    }
+    
+    footer .serviceWrapper ul {
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: 1fr 1fr;
+    }
+}

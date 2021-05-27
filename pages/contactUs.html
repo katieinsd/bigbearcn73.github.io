@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Geeks 911 Homepage</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+<body>
+    <header id="mainHeader">
+        <img src="images/ComputerGeeksLogo.psd" alt="geeks logo"><!--logo needs to be updated-->
+        <h1>Computer Geeks 911</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="navHome">Home</a></li>
+            <li><a href="../pages/about.html" class="navAbout">About</a>
+                <ul>
+                    <li><a href="../pages/reviews.html" class="navReviews">Reviews</a></li>
+                </ul>
+            </li> <!--close about dropdown-->
+            <li><a href="../pages/services.html" class="navServices">Services</a>
+                <ul>
+                    <li><a href="../pages/servicesPhones.html" class="navServicesPhones">Phones</a></li>
+                    <li><a href="../pages/servicesComputers.html" class="navServicesComputers">Computers</a></li>
+                    <li><a href="../pages/servicesHomeBusiness.html" class="navServicesHomeBusiness">Home / Business</a></li>
+                    <li><a href="../pages/servicesTroubleshooting.html" class="navServicesTroubleshooting">Troubleshooting</a></li>
+                </ul>
+            </li> <!--close services dropdown-->
+            <li><a href="../pages/shop.html" class="navShop">Shop</a></li>
+            <li><a href="../pages/faq.html" class="navFaq">FAQ</a></li>
+            <li><a href="../pages/contactUs.html" class="navContact active">Contact</a></li>
+        </ul>
+        </nav>
+
+<main>
+    <aside><img src="http://via.placeholder.com/400x300" alt="We're here to help image"></aside>
+    
+    <h1>Get in touch, we love to hear from you!</h1>
+    
+<!--the form action ="#" will be used just testing with my email.  method="post" is the 99% choice for this.  always assign an id as its very likely to have more than one form.-->
+            <form action="mailto:norrcj82@yahoo.com" method="POST" id="mainContactForm" enctype="text/plain">
+             
+            
+                <fieldset class="finfo">
+                    <legend>Your Information</legend>
+                    
+                    <ul>
+                        <li>
+                            <label for="fName">First name:</label>
+                            <input type="text" id="fName" name="first_name" placeholder="Your first name" required autofocus> <!--the required (boulian element) makes the user have to complete, auto focus puts blinking cursor on this input box to guide user where to start the form, only use once.-->
+                        </li>
+                        <li><label for="lName">Last name:</label>
+                            <input type="text" id="lName" name="last_name" placeholder="Your last name" required>
+                        </li>
+                        <li><label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="yourName@domain.com" required>
+                        </li>
+                        <li><label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="999-999-9999">
+                        </li>
+                    </ul>
+                </fieldset>
+
+        <fieldset class="inquiry"> 
+            <legend>Your Inquiry</legend>
+
+            <div class="iWrap">   
+                <div class="service">  
+                    <h3>Select your Type of Service:</h3>
+                    <ul class="radioList">
+                        <li>
+                            <input type="radio" id="cp" value="cp" name="serviceType"> 
+                            <label for="cp">Cell Phone</label> 
+                        </li>
+
+                        <li>
+                            <input type="radio" id="ct" value="ct" name="serviceType"> 
+                            <label for="ct">Computer</label> 
+                        </li>
+
+                        <li>
+                            <input type="radio" id="hb" value="hb" name="serviceType"> 
+                            <label for="hb">Home / Business</label> 
+                        </li>
+
+                        <li>
+                            <input type="radio" id="ts" value="ts" name="serviceType"> 
+                            <label for="ts">Troubleshooting</label> 
+                        </li>
+                        
+                        <li>
+                            <input type="radio" id="idk" value="idk" name="serviceType"> 
+                            <label for="idk">I dont know yet</label> 
+                        </li>
+
+                    </ul>
+                </div>  <!--close service-->
+
+                <div class="reg">
+                    <h3>Select your closest store:</h3>
+                    <select name="location" id="location">
+                        <option value="">Select closest store:</option> <!--note blank "" value, this one gives user instruction instead of their selection-->
+                        <option value="pointLoma">Point Loma</option>
+                        <option value="kearnyMesa">Kearny Mesa</option>
+                        <option value="shipIt">Ship it</option>
+                        <option value="none">None of these</option>
+                    </select>
+                </div><!--close reg-->
+
+                <div class="issue">
+                    <h3>Select your issue:</h3>
+                    <ul class="radioList"> <!--better for the user to select multiple items-->
+                        <li>
+                            <input type="checkbox" name="issue" id="sr" value="sr">
+                            <label for="sr">Screen Repair</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="issue" id="wd" value="wd">
+                            <label for="wd">Water Damage</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="issue" id="nw" value="nw">
+                            <label for="nw">Networking</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="issue" id="vi" value="vi">
+                            <label for="vi">Virus issues</label>
+                        </li>  
+                    </ul>
+                </div><!--close issue div-->
+
+                <div class="ques">
+                    <h3>Inquiry/Comments/Questions/Model #s</h3>
+                    <textarea name="msg" id="msg" placeholder="Please write your comment here...Please include model name/number for repairs"></textarea> 
+                </div><!--close ques-->
+            </div>  <!--close iWrap-->
+                </fieldset>
+    
+                <input type="reset" id="reset" class="button" value="Reset this form"> <!--value will change the text on button from the default reset if desired-->
+                <input type="submit" id="submit" class="button" value="Submit it">
+
+
+            
+            <!--for a name and submit box instead of fieldset...make sure input id matches label to tie them together; the name =name is for javascript to catch it but will validate without-->
+            <!--<label for="name">Enter your Name</label>
+            
+            <input type="text" id="name" name="name">
+
+            <input type="submit">-->
+        
+        </form>
+    
+    
+    
+    
+    
+    <article>
+        <h1>Our Locations:</h1>
+        <figure>
+            <img src="http://via.placeholder.com/100x50" alt="kearny mesa map"><!--this image for button must be created-->
+            <figcaption>Kearny Mesa</figcaption>
+        </figure>
+        <figure>
+            <img src="http://via.placeholder.com/100x50" alt="point loma map"><!--this image for button must be created-->
+            <figcaption>Point Loma</figcaption>
+        </figure>
+
+    </article>
+</main>
+<footer>
+    <h4>Computer Geeks 911</h4>
+    <p>7710 Balboa Ave Suite 223B, San Diego, CA 92111 - Above Subway ( Main Location )
+
+        3555 Rosecrans St, San Diego CA 92110 - Next to Rubios​ ( 2nd Main Location )
+        
+        3705 Rosecrans St, San Diego CA 92110 - Next to Big Lots</p>
+        <figure>
+            <img src="http://via.placeholder.com/100x50" alt="google and yelp review"><!--this image for button must be created-->
+            <figcaption>Rate and review us on Google & Yelp</figcaption>
+        </figure>
+    <p></p>
+    <p>&copy;Computer Geeks 911, 2021 All rights reserved</p>
+    <h4>GET A QUOTE</h4>
+    <!--not sure how the alignment of this list would go, so i just placed it below, should i place it as list items?-->
+    <ul><li>Google Repair</li>
+        <li>Cell Phone Repair</li>
+        <li>Tablet Repair</li>
+        <li>Laptop Repair</li>
+        <li>Computer Repair</li>
+        <li>iPhone Repair</li>
+        <li>Samsung Repair</li>
+        <li>iPad Repair</li>
+        <li>iPod Repair</li>
+        <li>Network Setup</li></ul>
+    <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc. uBreakiFix is an independent service company and is in no way affiliated with Apple Inc.</P>
+</footer>
+</body>
+</html>
