@@ -1,0 +1,112 @@
+/*Colors: #A5DEFA main blue #E5E5E5 light gray #8C1B1B maroon #717171 dark gray*/
+
+/*  Need to change Title on Contact Us page from "Home page"      -KR */
+
+
+/*  I added this div in the source good on ContactUs.html   -KR */
+#contactForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+legend {
+    color: #717171;
+/*    font-weight:          need to choose -KR*/ 
+}
+
+form ul { 
+    list-style-type: none;
+}
+
+#label {
+    display: block;
+    margin: .75em 0 .25em 0;
+}
+
+/*
+        We could add a <span> around each of the input boxes in .finfo in the source code,is there another way (besides margin-left: -30px) to keep the inputs within the fieldset using only css?         
+span {
+    display: block;
+    overflow: hidden;
+    padding-right:10px;
+}
+                                -KR */
+
+.finfo {
+    border: 1px solid #8C1B1B;
+    padding: .5em .25em; 
+}
+
+.finfo li {
+    margin-left: -30px;
+}
+
+
+.finfo input {
+    padding: .5em;
+    margin: .5em;
+    width: 90%;
+}
+
+/*this rules changes the default blue color when the input field is selected    -KR*/
+input:focus {
+    border: none;
+    padding: .5em;
+    outline: 2px solid #A5DEFA;
+/*    box-shadow: #A5DEFA;         We could add a box shadow if we want? -KR */
+
+}
+
+.inquiry {
+    border: 1px solid #8C1B1B;
+    padding: .5em 1em;
+    margin: .75em 0;
+}
+
+.inquiry h3 {
+    color: #8C1B1B;
+}
+
+.inquiry textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+textarea:focus {
+    border: none;
+    padding: .5em;
+    outline: 2px solid #A5DEFA;
+
+/*I changed the button order in the contactUs.html and we'll need to check that the button styles are consistent across all pages:             -KR */
+.button#submit {
+    background-color: #8C1B1B;
+    color: #fff;
+    font-weight: 700;
+    width: 300px;
+    padding: .75em;
+    border: none;
+    border-radius: .5em;
+    display: block;
+    margin: 1em auto;  
+}
+
+/*        Is this button important for our design? Maybe we can talk about whether we need it for this particular use case and if not, we can explain here why we chose not to include it from a usability perspective   -KR */
+.button#reset  {
+    background-color: #fff;
+    color: #717171;
+    width: 150px;
+    padding: .75em;
+    border: 1px solid #717171;
+    border-radius: .5em;
+    display: block;
+    margin: 1em auto;  
+}
+
+.reg select {
+    width:  260px;
+    padding: .5em .25em;
+}
+
+
+
