@@ -1,0 +1,45 @@
+main h1 {
+    margin-bottom: 20px;
+}
+
+article {
+    padding: 20px;
+}
+
+article h2, article h3{
+    margin: 10px auto;
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+}
+
+article p{
+    text-align: left;
+}
+
+article ul{
+    text-align: left;
+    padding: 25px;
+    margin-left: 15px;
+}
+
+.deal {
+    text-align: center;
+    margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .servicehomeWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .deal {
+        margin: 30px;
+    }
+    
+}

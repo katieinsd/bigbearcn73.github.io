@@ -4,97 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Geeks 911 Homepage</title>
-    <link rel="stylesheet" href="../../css/main.css" type="text/css">
+    <title>About reviews</title>
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/reviews.css" type="text/css">
 </head>
 <body>
     <header id="mainHeader">
-        <img src="images/ComputerGeeksLogo.psd" alt="geeks logo"><!--logo needs to be updated-->
-        <h1>Computer Geeks 911</h1>
+        <img src="../images/geekLogo.png" alt="geeks logo"><!--logo needs to be updated-->
+        <h3>Computer Geeks 911</h3>
+        <nav>
+            <input type="checkbox" id="navToggle" class="navToggle">
+            <label for="navToggle" class="navToggleLabel">
+                <span class="navicon"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="../index.html" class="navHome">Home</a></li>
+                <li><a href="about.html" class="navAbout">About</a>
+                    <ul>
+                        <li><a href="pages/reviews.html" class="navReviews">Reviews</a></li>
+                    </ul>
+                </li> <!--close about dropdown-->
+                <li><a href="services.html" class="navServices">Services</a>
+                    <ul>
+                        <li><a href="servicesPhones.html" class="navServicesPhones">Phones</a></li>
+                        <li><a href="servicesComputers.html" class="navServicesComputers">Computers</a></li>
+                        <li><a href="servicesHomeBusiness.html" class="navServicesHomeBusiness">Home / Business</a></li>
+                        <li><a href="servicesTroubleshooting.html" class="navServicesTroubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </li> <!--close services dropdown-->
+                <li><a href="shop.html" class="navShop">Shop</a></li>
+                <li><a href="faq.html" class="navFaq">FAQ</a></li>
+                <li><a href="contactUs.html" class="navContact">Contact</a></li>
+            </ul>
+            </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="../index.html" class="navHome">Home</a></li>
-            <li><a href="../pages/about.html" class="navAbout">About</a>
-                <ul>
-                    <li><a href="pages/reviews.html" class="navReviews active">Reviews</a></li>
-                </ul>
-            </li> <!--close about dropdown-->
-            <li><a href="../pages/services.html" class="navServices">Services</a>
-                <ul>
-                    <li><a href="../pages/servicesPhones.html" class="navServicesPhones">Phones</a></li>
-                    <li><a href="../pages/servicesComputers.html" class="navServicesComputers">Computers</a></li>
-                    <li><a href="../pages/servicesHomeBusiness.html" class="navServicesHomeBusiness">Home / Business</a></li>
-                    <li><a href="../pages/servicesTroubleshooting.html" class="navServicesTroubleshooting">Troubleshooting</a></li>
-                </ul>
-            </li> <!--close services dropdown-->
-            <li><a href="../pages/shop.html" class="navShop">Shop</a></li>
-            <li><a href="../pages/faq.html" class="navFaq">FAQ</a></li>
-            <li><a href="../pages/contactUs.html" class="navContact">Contact</a></li>
-        </ul>
-        </nav>
 
 <main>
     <article>
-        <h1>Computer Geeks 911 Reviews:</h1>
-        <p>4.6 average from 105 reviews on Google and Yelp</p>
-        <img src="http://via.placeholder.com/400x300" alt="Reviewers">
+<!--        <div>-->
+            <h1>Computer Geeks 911<br>Reviews:</h1>
+            <h3>4.6 average from <br>105 reviews on Google and Yelp</h3>
+            <div class=headerImage>
+                <img src="../images/Reviews.jpg" alt="Reviewers">
+            </div>
+<!--           I changed the categories to reflect services offered - KR-->
+        <select name="category" id="category">
+            <option value="category">All Categories</option>
+            <option value="phone">Cell Phones</option>
+            <option value="computer">Computers</option>
+            <option value="homeBus">Home/Business</option>
+            <option value="trouble">Troubleshooting</option>
+        </select>
+<!--        </div>-->
     </article>
 
-    <figure>
-        <img src="http://via.placeholder.com/50x50" alt="google and yelp review">
-        <img src="http://via.placeholder.com/50x150" alt="stars">
-        <figcaption>1 week ago via Yelp</figcaption>
-        <figcaption>Omar gives the best service by far and has the best prices!! He goes above and beyond for his
-            clients and gives me honest advice. I go to him for all my phone needs! Any screen replacement 
-            is 50 dollars!</figcaption>
-    </figure>
-    <figure>
-        <img src="http://via.placeholder.com/50x50" alt="google and yelp review">
-        <img src="http://via.placeholder.com/50x150" alt="stars">
-        <figcaption>1 month ago via Google</figcaption>
-        <figcaption>Great service and quality of replacement. Not to mention they finished the screen replacement
-            within 20 minutes. Would totally recommend them!</figcaption>
-    </figure>
-    <figure>
-        <img src="http://via.placeholder.com/50x50" alt="google and yelp review">
-        <img src="http://via.placeholder.com/50x150" alt="stars">
-        <figcaption>2 months ago via Google</figcaption>
-        <figcaption>My iPad’s was on the blink. I couldn’t use this tablet any more. I took it to Omar (that’s the main 
-            guy’s name). He checked a few things and announced: you need a new battery, that’s all. I had 
-            no idea how to change the battery. He happened to have it & he changed it in 20 minutes, while 
-            I was waiting. It was not easy to do (I was watching). He just charged me $79. They repair 
-            iPhones, Androids and PC’s too. Good address to keep in mind. Thanks!</figcaption>
-    </figure>
+    <section class="reviewWrapper">
+       
+<!--       Figure and figcaption were having some issues validating again. Changed to div, h3, and p like in the Index page  -KR -->
+        <div class="rateSection">
+            <img src="../images/reviewer1.jpg" alt="google and yelp review">
+        <!--  input by css      <img src="http://via.placeholder.com/50x150" alt="stars">-->
+            <div class="rateWrapper">
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <h3>1 week ago via Yelp</h3>
+                <p>Omar gives the best service by far and has the best prices!! He goes above     and beyond for hisclients and gives me honest advice. I go to him for all my phone needs! Any screen replacement 
+                is 50 dollars!</p>
+            </div>        <!--end rateWrapper 1-->
+
+            <img src="../images/reviewer2.jpg" alt="google and yelp review">
+            <div class="rateWrapper">
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <!--  input by css    <img src="http://via.placeholder.com/50x150" alt="stars">-->
+                <h3>1 month ago via Google</h3>
+                <p>Great service and quality of replacement. Not to mention they finished the screen replacement within 20 minutes. Would totally recommend them!</p>
+            </div> <!--            end rateWrapper 2-->
+
+            <img src="../images/reviewer3.jpg" alt="google and yelp review">
+        <!-- input by css  <img src="http://via.placeholder.com/50x150" alt="stars">-->
+           
+            <div class="rateWrapper">
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <h3>2 months ago via Google</h3>
+                <p>My iPad’s was on the blink. I couldn’t use this tablet any more. I took it to Omar (that’s the main guy’s name). He checked a few things and announced: you need a new battery, that’s all. I had no idea how to change the battery. He happened to have it & he changed it in 20 minutes, while I was waiting. It was not easy to do (I was watching). He just charged me $79. They repair iPhones, Androids and PC’s too. Good address to keep in mind. Thanks!</p>
+            </div>     <!--   end rateWrapper 3-->
+
+     </div>     <!--     end rateSection-->
+
+    </section>
 
 </main>
 <footer>
-    <h4>Computer Geeks 911</h4>
-    <p>7710 Balboa Ave Suite 223B, San Diego, CA 92111 - Above Subway ( Main Location )
-
-        3555 Rosecrans St, San Diego CA 92110 - Next to Rubios​ ( 2nd Main Location )
+       
+        <div class="contactWrapper">
+            <h4>Computer Geeks 911</h4>
+            <div class="phone">
+                <img src="../images/phone.svg" alt="phoneicon">
+                <p>858.208.0002</p>
+            </div> <!-- End of phone -->
+            <div class="email">
+                <img src="../images/envelope.svg" alt="emailicon">
+                <a href="mailto:admin@geek911.com">Contact Us</a>
+            </div> <!-- End of email -->
+            <div class="address">
+                <p>
+                    7710 Balboa Ave Suite 223B, San Diego, CA 92111 - Above Subway ( Main Location )
+                </p>
+                <p>
+                    3555 Rosecrans St, San Diego CA 92110 - Next to Rubios​ ( 2nd Main Location )
+                </p>
+                <p>    
+                    3705 Rosecrans St, San Diego CA 92110 - Next to Big Lots
+                </p>
+            </div> <!-- End of address -->
+        </div> <!-- End of contactWrapper -->
         
-        3705 Rosecrans St, San Diego CA 92110 - Next to Big Lots</p>
-        <figure>
-            <img src="http://via.placeholder.com/100x50" alt="google and yelp review"><!--this image for button must be created-->
-            <figcaption>Rate and review us on Google & Yelp</figcaption>
-        </figure>
-    <p></p>
-    <p>&copy;Computer Geeks 911, 2021 All rights reserved</p>
-    <h4>GET A QUOTE</h4>
-    <!--not sure how the alignment of this list would go, so i just placed it below, should i place it as list items?-->
-    <ul><li>Google Repair</li>
-        <li>Cell Phone Repair</li>
-        <li>Tablet Repair</li>
-        <li>Laptop Repair</li>
-        <li>Computer Repair</li>
-        <li>iPhone Repair</li>
-        <li>Samsung Repair</li>
-        <li>iPad Repair</li>
-        <li>iPod Repair</li>
-        <li>Network Setup</li></ul>
-    <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc. uBreakiFix is an independent service company and is in no way affiliated with Apple Inc.</P>
-</footer>
+        <div class="rateWrapper">
+            <p>Rate and review us on Google & Yelp</p>
+            <div class="rateicon">
+                <img src="../images/googleIcon.png" alt="gicon" class="icon">
+                <img src="../images/yelpLogo.png" alt="yelpicon" class="icon">
+            </div>
+        
+            <p>&copy;Computer Geeks 911, 2021 All rights reserved</p>
+        </div> <!-- End of rateWrapper -->
+        
+        
+        <div class="serviceWrapper">
+            <h4>GET A QUOTE</h4>
+            <ul>
+                <li>Google Repair</li>
+                <li>Cell Phone Repair</li>
+                <li>Tablet Repair</li>
+                <li>Laptop Repair</li>
+                <li>Computer Repair</li>
+                <li>iPhone Repair</li>
+                <li>Samsung Repair</li>
+                <li>iPad Repair</li>
+                <li>iPod Repair</li>
+                <li>Network Setup</li>
+            </ul>
+            <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc.</p>
+            <p>Computer Geeks 911 is an independent service company and is in no way affiliated with Apple Inc.</p>
+        </div> <!-- End of serviceWrapper -->
+    </footer>
 </body>
 </html>

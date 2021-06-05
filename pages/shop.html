@@ -4,80 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/shop.css" type="text/css">
 </head>
 <body>
     <header id="mainHeader">
-        <img src="images/ComputerGeeksLogo.psd" alt="geeks logo"><!--logo needs to be updated-->
-        <h1>Computer Geeks 911</h1>
+        <img src="../images/geekLogo.png" alt="geeks logo"><!--logo needs to be updated-->
+        <h3>Computer Geeks 911</h3>
+        <nav>
+            <input type="checkbox" id="navToggle" class="navToggle">
+            <label for="navToggle" class="navToggleLabel">
+                <span class="navicon"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="../index.html" class="navHome">Home</a></li>
+                <li><a href="about.html" class="navAbout">About</a>
+                    <ul>
+                        <li><a href="reviews.html" class="navReviews">Reviews</a></li>
+                    </ul>
+                </li> <!--close about dropdown-->
+                <li><a href="services.html" class="navServices">Services</a>
+                    <ul>
+                        <li><a href="servicesPhones.html" class="navServicesPhones">Phones</a></li>
+                        <li><a href="servicesComputers.html" class="navServicesComputers">Computers</a></li>
+                        <li><a href="servicesHomeBusiness.html" class="navServicesHomeBusiness">Home / Business</a></li>
+                        <li><a href="servicesTroubleshooting.html" class="navServicesTroubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </li> <!--close services dropdown-->
+                <li><a href="shop.html" class="navShop">Shop</a></li>
+                <li><a href="faq.html" class="navFaq">FAQ</a></li>
+                <li><a href="contactUs.html" class="navContact">Contact</a></li>
+            </ul>
+            </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="../index.html" class="navHome">Home</a></li>
-            <li><a href="../pages/about.html" class="navAbout">About</a>
-                <ul>
-                    <li><a href="../pages/reviews.html" class="navReviews">Reviews</a></li>
-                </ul>
-            </li> <!--close about dropdown-->
-            <li><a href="../pages/services.html" class="navServices">Services</a>
-                <ul>
-                    <li><a href="../pages/servicesPhones.html" class="navServicesPhones">Phones</a></li>
-                    <li><a href="../pages/servicesComputers.html" class="navServicesComputers">Computers</a></li>
-                    <li><a href="../pages/servicesHomeBusiness.html" class="navServicesHomeBusiness">Home / Business</a></li>
-                    <li><a href="../pages/servicesTroubleshooting.html" class="navServicesTroubleshooting">Troubleshooting</a></li>
-                </ul>
-            </li> <!--close services dropdown-->
-            <li><a href="pages/shop.html" class="navShop active">Shop</a></li>
-            <li><a href="../pages/faq.html" class="navFaq">FAQ</a></li>
-            <li><a href="../pages/contactUs.html" class="navContact">Contact</a></li>
-        </ul>
-        </nav>
 
 <main>
-    <h1>Shop Rufurbished</h1>
+    <h1>Shop for Refurbished Laptops, Desktops, Mobile Phones, Tablets & More</h1>    
+    
 
-    <p>need copy and images since none of us did this as a mock up, do you like below?</p>
-
-    <figure>
-        <img src="http://via.placeholder.com/300x200" alt="refurbished computer"><!--this image for button must be created-->
-        <figcaption>Refurbished Computers<a href="../pages/contactUs.html">Check in to see whats in stock</a></figcaption>
-    </figure>
-
-    <figure>
-        <img src="http://via.placeholder.com/300x200" alt="refurbished phones"><!--this image for button must be created-->
-        <figcaption>Refurbished Cell Phones<a href="../pages/contactUs.html">Check in to see whats in stock</a></figcaption>
-    </figure>
-
-
-</main>
-<footer>
-    <h4>Computer Geeks 911</h4>
-    <p>7710 Balboa Ave Suite 223B, San Diego, CA 92111 - Above Subway ( Main Location )
-
-        3555 Rosecrans St, San Diego CA 92110 - Next to Rubios​ ( 2nd Main Location )
+    <div class="shopWrapper">
+        <div class="shopItem">
+            <img src="..//images/shopLaptop.jpg" alt="refurbished laptop">
+            <h3>Refurbished Laptops</h3>
+            <div class="button">
+            <a href="../pages/contactUs.html" class="stock">Check Store</a>
+            </div>
+        </div>
         
-        3705 Rosecrans St, San Diego CA 92110 - Next to Big Lots</p>
-        <figure>
-            <img src="http://via.placeholder.com/100x50" alt="google and yelp review"><!--this image for button must be created-->
-            <figcaption>Rate and review us on Google & Yelp</figcaption>
-        </figure>
-    <p></p>
-    <p>&copy;Computer Geeks 911, 2021 All rights reserved</p>
-    <h4>GET A QUOTE</h4>
-    <!--not sure how the alignment of this list would go, so i just placed it below, should i place it as list items?-->
-    <ul><li>Google Repair</li>
-        <li>Cell Phone Repair</li>
-        <li>Tablet Repair</li>
-        <li>Laptop Repair</li>
-        <li>Computer Repair</li>
-        <li>iPhone Repair</li>
-        <li>Samsung Repair</li>
-        <li>iPad Repair</li>
-        <li>iPod Repair</li>
-        <li>Network Setup</li></ul>
-    <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc. uBreakiFix is an independent service company and is in no way affiliated with Apple Inc.</P>
-</footer>
+        <div class="shopItem">
+            <img src="../images/shopDesktop.jpg" alt="refurbished desktop">
+            <h3>Refurbished Desktops</h3>
+            <div class="button">
+                <a href="../pages/contactUs.html" class="stock">Check Store</a>
+            </div>
+        </div>
+        
+        <div class="shopItem">
+            <img src="../images/shopPhones.jpg" alt="refurbished phone">
+            <h3>Refurbished Phone</h3>
+            <div class="button">
+            <a href="../pages/contactUs.html" class="stock">Check Store</a>
+            </div>
+        </div>
+        
+        <div class="shopItem">
+            <img src="../images/shopTablet.jpg" alt="refurbished tablet">
+            <h3>Refurbished Tablets</h3>
+            <div class="button">
+            <a href="../pages/contactUs.html" class="stock">Check Store</a>
+            </div>
+        </div>
+    </div>
+    
+    <h1>Why buy a refurbished product?</h1>
+    <section class="shoprefurbished">
+        <img src="../images/whyRefurbish.png" alt="why_buy_refurbish">
+        <div class="shoparticle">
+            <article>
+                <h3>21 POINT QUALITY INSPECTION</h3>
+                <p>Purchase our products with confidence. We use a rigorous 21 point quality inspection process to test all refurbished equipment and ensure reliability prior to delivery. We have the capability to further customize each product to meet your needs.</p>
+            </article>
+            <article>
+                <h3>THE SMART AND ECONOMICAL CHOICE</h3>
+                <p>Our customers get significant savings. Most models can be bought at a 50% discount over buying factory new. What would you do with the extra cash?
+                </p>
+            </article>
+            <article>
+                <h3>DO YOUR PART FOR THE ENVIRONMENT</h3>
+                <p>Did you know that each year worldwide electronic waste has generated over 50 million metric tons of e-waste and that number is steadily climbing? That’s 4,500 Eiffel Towers of e-waste!</p>
+            </article>
+        </div>
+        
+    </section>
+</main>
+
+<footer>
+       
+        <div class="contactWrapper">
+            <h4>Computer Geeks 911</h4>
+            <div class="phone">
+                <img src="../images/phone.svg" alt="phoneicon">
+                <p>858.208.0002</p>
+            </div> <!-- End of phone -->
+            <div class="email">
+                <img src="../images/envelope.svg" alt="emailicon">
+                <a href="mailto:admin@geek911.com">Contact Us</a>
+            </div> <!-- End of email -->
+            <div class="address">
+                <p>
+                    7710 Balboa Ave Suite 223B, San Diego, CA 92111 - Above Subway ( Main Location )
+                </p>
+                <p>
+                    3555 Rosecrans St, San Diego CA 92110 - Next to Rubios​ ( 2nd Main Location )
+                </p>
+                <p>    
+                    3705 Rosecrans St, San Diego CA 92110 - Next to Big Lots
+                </p>
+            </div> <!-- End of address -->
+        </div> <!-- End of contactWrapper -->
+        
+        <div class="rateWrapper">
+            <p>Rate and review us on Google & Yelp</p>
+            <div class="rateicon">
+                <img src="../images/googleIcon.png" alt="gicon" class="icon">
+                <img src="../images/yelpLogo.png" alt="yelpicon" class="icon">
+            </div>
+        
+            <p>&copy;Computer Geeks 911, 2021 All rights reserved</p>
+        </div> <!-- End of rateWrapper -->
+        
+        
+        <div class="serviceWrapper">
+            <h4>GET A QUOTE</h4>
+            <ul>
+                <li>Google Repair</li>
+                <li>Cell Phone Repair</li>
+                <li>Tablet Repair</li>
+                <li>Laptop Repair</li>
+                <li>Computer Repair</li>
+                <li>iPhone Repair</li>
+                <li>Samsung Repair</li>
+                <li>iPad Repair</li>
+                <li>iPod Repair</li>
+                <li>Network Setup</li>
+            </ul>
+            <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc. uBreakiFix is an independent service company and is in no way affiliated with Apple Inc.</p>
+        </div> <!-- End of serviceWrapper -->
+    </footer>
 </body>
 </html>

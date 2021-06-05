@@ -1,0 +1,77 @@
+main h1 {
+    margin-bottom: 15px;
+}
+
+.shopWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.shopWrapper img {
+    max-width: 100%;
+    height: auto;
+    max-height: 330px;
+}
+
+div.shopItem {
+    border: solid 1px #ccc;
+    padding: 1em;
+}
+
+.shoparticle {
+    margin: 10px;
+}
+
+.shoprefurbished img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shoparticle h3 {
+    margin-bottom: 20px;    
+}
+
+.shoparticle p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.stock {
+    display: block;
+    width: 50%;
+    padding: .5em;
+    margin-top: 1em;
+    background-color: #8C1B1B;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .shopWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    section.shoprefurbished {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    .shoparticle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+}

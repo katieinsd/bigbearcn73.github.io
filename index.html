@@ -10,7 +10,7 @@
 </head>
 <body>
     <header id="mainHeader">
-        <img src="https://via.placeholder.com/75" alt="geeks logo"><!--logo needs to be updated-->
+        <img src="images/geekLogo.png" alt="geeks logo"><!--logo needs to be updated-->
         <h3>Computer Geeks 911</h3>
         <nav>
             <input type="checkbox" id="navToggle" class="navToggle">
@@ -42,7 +42,7 @@
 
     <main>
         <header id="body">
-            <div><img src="images/PhoneInWater.png" alt="phone in water"></div>
+            <div><img src="images/PhoneInWater.jpg" alt="phone in water"></div>
             <div>
                 <h3>NEED DEVICE REPAIR?</h3>
                 <h1>Computer Geeks to the Rescue!</h1>
@@ -55,32 +55,40 @@
         <section class="mainContent">
             <h1>What can we repair for you today?</h1>
             <div class="mainwrapper">
-                <figure>
-                    <img src="images/CellPhone.png" alt="cell phones">
-                    <figcaption>Cell Phones</figcaption>
-                    <p>We repair any mobile device. Apple,
-                        Samsung, Sony, Nokia, LG, & more!</p>
-                </figure>
-                <figure>
-                    <img src="images/Computer.png" alt="computers">
-                    <figcaption>Computers</figcaption>
-                    <p>We provide computer repair, tune-up, and virus removal services for all of the most popular computer and laptop brands.</p>
-                </figure>
-                <figure>
-                    <img src="images/Networking.png" alt="home business">
-                    <figcaption>Home / Business</figcaption>
-                    <p>Our experts can setup your home or business network. Working from home?  Give us a call, we can help!</p>
-                </figure>
-                <figure>
-                    <img src="images/TroubleShooting.png" alt="troubleshooting">
-                    <figcaption>Troubleshooting</figcaption>
-                    <p>Random help, we are here for you.  Let's troubleshoot together.</p>
-                </figure>
-            </div>
-<!--            <div class="clearIt"></div>-->
+<!--               Changed to div, article, and h3 because having a <p> in a <figure> wouldn't validate  -KR-->
+                <div id="container">
+                    <article class="service">
+                        <a href="pages/servicesPhones.html"><img src="images/CellPhone.png" alt="cell phones"></a>
+                        <h3>Cell Phones</h3>
+                        <p>We repair any mobile device. Apple,
+                            Samsung, Sony, Nokia, LG, & more!</p>
+                    </article>    
+
+                    <article class="service">
+                        <a href="pages/servicesComputers.html"><img src="images/Computer.png" alt="computers"></a>
+                        <h3>Computers</h3>
+                        <p>We provide computer repair, tune-up, and virus removal services for all of the most popular computer and laptop brands.</p>
+                     </article>
+
+                    <article class="service">
+                        <a href="pages/servicesHomeBusiness.html"><img src="images/Networking.png" alt="home business"></a>
+                        <h3>Home / Business</h3>
+                        <p>Our experts can setup your home or business network. Working from home?  Give us a call, we can help!</p>
+                    </article>
+
+                    <article class="service">
+                        <a href="pages/servicesTroubleshooting.html"><img src="images/TroubleShooting.png" alt="troubleshooting"></a>
+                        <h3>Troubleshooting</h3>
+                        <p>Random help, we are here for you.  Let's troubleshoot together.</p>
+                    </article>
+                </div> <!--            end container -->
+
+            
+            
+<!--            <div class="clearIt"></div>            Do we still need this? -KR -->
 
             <article>
-                <div>
+                <div class="freequote">
                     <h2>WE OFFER A FREE QUOTE</h2>
                 </div>
                 <div>
@@ -96,11 +104,11 @@
         <div class="contactWrapper">
             <h4>Computer Geeks 911</h4>
             <div class="phone">
-                <img src="https://via.placeholder.com/30" alt="phoneicon">
+                <img src="images/Phone.svg" alt="phoneicon">
                 <p>858.208.0002</p>
             </div> <!-- End of phone -->
             <div class="email">
-                <img src="https://via.placeholder.com/30" alt="emailicon">
+                <img src="images/Envelope.svg" alt="emailicon">
                 <a href="mailto:admin@geek911.com">Contact Us</a>
             </div> <!-- End of email -->
             <div class="address">
@@ -119,8 +127,8 @@
         <div class="rateWrapper">
             <p>Rate and review us on Google & Yelp</p>
             <div class="rateicon">
-                <img src="images/google+%20icon.png" alt="gicon" class="icon">
-                <img src="images/yelp-logo.png" alt="yelpicon" class="icon">
+                <img src="images/googleIcon.png" alt="gicon" class="icon">
+                <img src="images/yelpLogo.png" alt="yelpicon" class="icon">
             </div>
         
             <p>&copy;Computer Geeks 911, 2021 All rights reserved</p>
@@ -141,7 +149,9 @@
                 <li>iPod Repair</li>
                 <li>Network Setup</li>
             </ul>
-            <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc. uBreakiFix is an independent service company and is in no way affiliated with Apple Inc.</p>
+            
+<!--            I separated into separate p tags to give them some margin  -KR  -->
+            <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc.</p> <p>Computer Geeks 911 is an independent service company and is in no way affiliated with Apple Inc.</p>
         </div> <!-- End of serviceWrapper -->
     </footer>
 </body>
