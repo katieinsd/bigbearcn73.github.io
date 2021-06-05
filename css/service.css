@@ -1,0 +1,44 @@
+main h1{
+    margin-bottom: 20px;
+}
+
+main h3{
+    margin: 10px;
+/*    changed to center alignment -KR*/
+    text-align: center;
+}
+
+section.mainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section.mainContent img {
+    max-width: 100%;
+    height: auto;
+}
+
+section.mainContent img:hover {
+    opacity: 0.5;
+}
+
+.quote {
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    padding: 1em;
+    background-color: #8C1B1B;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    
+    section.mainContent {
+       grid-template-columns: 1fr 1fr;
+    }
+    
+}
+

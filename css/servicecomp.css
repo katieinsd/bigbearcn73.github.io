@@ -1,0 +1,76 @@
+/*I added some text to the html page and some styles here -KR*/
+
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+main h1 {
+    margin-top: 10px;
+}
+
+main p {
+    text-align: left;
+    padding: 5px;
+}
+
+#issues{
+    margin: 15px;
+    text-align: center;
+}
+
+#issues h2 {
+    text-align: center;
+}
+
+#issues ul {
+    text-align: left;
+}
+
+#issues li {
+    list-style-type: none;
+    padding: 1px;
+}
+
+.deal {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+@media screen and (min-width:750px) {
+    
+#issues img {
+    grid-area: im;
+}
+
+#issues h2 {
+    grid-area: hhh;
+    text-align: left;
+    margin-left: -30px;
+}
+
+#issues ul {
+    grid-area: ul;
+    text-align: left;
+    margin-left: -30px;
+}
+
+#issues {
+    display: grid;
+    grid-template-areas:
+            ". . . hhh"
+            ". im im ul"
+            ". im im ul"
+            ". im im ul"
+            ". im im ul"
+    }  
+    
+    .deal {
+        padding:30px;
+}
+}

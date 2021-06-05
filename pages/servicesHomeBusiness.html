@@ -5,142 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Geeks 911 Homepage</title>
-    <link rel="stylesheet" href="../../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/servicehome.css" type="text/css">
 </head>
 <body>
     <header id="mainHeader">
-        <img src="images/ComputerGeeksLogo.psd" alt="geeks logo"><!--logo needs to be updated-->
-        <h1>Computer Geeks 911</h1>
+        <img src="../images/geekLogo.png" alt="geeks logo"><!--logo needs to be updated-->
+        <h3>Computer Geeks 911</h3>
+        <nav>
+            <input type="checkbox" id="navToggle" class="navToggle">
+            <label for="navToggle" class="navToggleLabel">
+                <span class="navicon"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="../index.html" class="navHome">Home</a></li>
+                <li><a href="about.html" class="navAbout">About</a>
+                    <ul>
+                        <li><a href="reviews.html" class="navReviews">Reviews</a></li>
+                    </ul>
+                </li> <!--close about dropdown-->
+                <li><a href="services.html" class="navServices">Services</a>
+                    <ul>
+                        <li><a href="servicesPhones.html" class="navServicesPhones">Phones</a></li>
+                        <li><a href="servicesComputers.html" class="navServicesComputers">Computers</a></li>
+                        <li><a href="servicesHomeBusiness.html" class="navServicesHomeBusiness">Home / Business</a></li>
+                        <li><a href="servicesTroubleshooting.html" class="navServicesTroubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </li> <!--close services dropdown-->
+                <li><a href="shop.html" class="navShop">Shop</a></li>
+                <li><a href="faq.html" class="navFaq">FAQ</a></li>
+                <li><a href="contactUs.html" class="navContact">Contact</a></li>
+            </ul>
+            </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="../index.html" class="navHome">Home</a></li>
-            <li><a href="../pages/about.html" class="navAbout">About</a>
-                <ul>
-                    <li><a href="../pages/reviews.html" class="navReviews">Reviews</a></li>
-                </ul>
-            </li> <!--close about dropdown-->
-            <li><a href="../pages/services.html" class="navServices">Services</a>
-                <ul>
-                    <li><a href="../pages/servicesPhones.html" class="navServicesPhones">Phones</a></li>
-                    <li><a href="../pages/servicesComputers.html" class="navServicesComputers">Computers</a></li>
-                    <li><a href="../pages/servicesHomeBusiness.html" class="navServicesHomeBusiness active">Home / Business</a></li>
-                    <li><a href="../pages/servicesTroubleshooting.html" class="navServicesTroubleshooting">Troubleshooting</a></li>
-                </ul>
-            </li> <!--close services dropdown-->
-            <li><a href="../pages/shop.html" class="navShop">Shop</a></li>
-            <li><a href="../pages/faq.html" class="navFaq">FAQ</a></li>
-            <li><a href="../pages/contactUs.html" class="navContact">Contact</a></li>
-        </ul>
-        </nav>
 
 
 <main>
-    <article>
-        <h1>Home and Business Services</h1>
-        <h2>Networking</h2>
-        <figure>
-            <img src="http://via.placeholder.com/300x200" alt="networking">
-            <figcaption>Our $95 Home Wi-Fi & Network installation and setup includes:
-                <ul>
-                    <li>Traditional Router Setup or Mesh Router Setup</li>
-                    <li>Guest Wi-Fi Setup</li>
-                    <li>Connection of Your Wireless Devices</li>
-                    <li>Wi-Fi Speed Optimization</li>
-                    <li>Network Security</li>
-                    <li>Training</li>
-                </ul>
-                </figcaption>
-        </figure>
-    </article>
-    <article>
-        <h2>Printer Services</h2>
-        <figure>
-            <img src="http://via.placeholder.com/300x200" alt="printer repair">
-            <figcaption>We can provide the following printer support:
-                <ul>
-                    <li>Paper Jam</li>
-                    <li>Printer head is not working</li>
-                    <li>Error code diagnosis</li>
-                    <li>Developer/Toner issues</li>
-                    <li>Change cartridges or "can't find printer head"</li>
-                    <li>CIS failure (continuous ink supply)</li>
-                    <li>scanning is very slow</li>
-                    <li>pages are coming out dark</li>
-                    <li>black lines on every scan</li>
-                    <li>middle of the page faded or white</li>
-                    <li>outer edges are black</li>
-                </ul>
-                </figcaption>
-        </figure>
-    </article>
-    <article>
-        <h2>Data Recovery</h2>
-            <img src="http://via.placeholder.com/300x200" alt="data recovery">
-            <h3>Type Of Data Recovery Services We Offer</h3>
-            <p>It is still likely that we can retrieve your valuable files 
-                for you. Common files that can be retrieved are photos,
-                 videos, music, favorites, documents, and Microsoft 
-                Outlook files.
-                Computer Systems & Data Recovery Services
-                It depends how damaged your hard drive is, as to 
-                whether we can successfully retrieve your data from it.
-                    Computer Dead – HDD Recovery
-                    Hard Drive Recovery – Hard Drive Failure
-                    Hard Drive Data Recovery Diagnostic Fee
-                    External Hard Drive Data Recovery
-                    Last Resort for HDD Recovery
-                    USB, Flash Memory Card recovery</p>
-    </article>
-    <article>
-        <h2>Software Support</h2>
-            <img src="http://via.placeholder.com/300x200" alt="software support image">
-            <h3>Need a new Windows installation? We can do it!</h3>
-            <p>Most operating systems are fairly easy to install these days. 
-                There have been numerous advances in the Windows 
-                platform (now at Windows 10) in which a lot of the hard 
-                work is done automatically for you. Yet, there are subtle
-                 complexities to any operating system installation. Should 
-                you create a new partition? Do you want to format your 
-                existing partition? What the heck is a partition?
-                
-                Other software can present similar obstacles and it’s advised
-                 that you seek a professional. Some software can actually
-                 present a security or privacy threat.
-                
-                Please call us for a free quote for installing your software 
-                and/or OS. We promise to give you quality service at a price
-                 that is both reasonable and competitive.</p>
-    </article>
-
-</main>
-<footer>
-    <h4>Computer Geeks 911</h4>
-    <p>7710 Balboa Ave Suite 223B, San Diego, CA 92111 - Above Subway ( Main Location )
-
-        3555 Rosecrans St, San Diego CA 92110 - Next to Rubios​ ( 2nd Main Location )
+    <h1>Home and Business Services</h1>
+    <div class="servicehomeWrapper">
+        <article>
+            <h2>Networking</h2>
+            <img src="../images/serviceHBnetwork.jpg" alt="networking">
+            <h3>Our $95 Home Wi-Fi & Network installation and setup includes:</h3>
+            <ul>
+                <li>Traditional router setup or mesh router setup</li>
+                <li>Guest wi-fi setup</li>
+                <li>Connection of your wireless devices</li>
+                <li>Wi-fi speed optimization</li>
+                <li>Network security</li>
+                <li>Training</li>
+            </ul>        
+        </article>
         
-        3705 Rosecrans St, San Diego CA 92110 - Next to Big Lots</p>
-        <figure>
-            <img src="http://via.placeholder.com/100x50" alt="google and yelp review"><!--this image for button must be created-->
-            <figcaption>Rate and review us on Google & Yelp</figcaption>
-        </figure>
-    <p></p>
-    <p>&copy;Computer Geeks 911, 2021 All rights reserved</p>
-    <h4>GET A QUOTE</h4>
-    <!--not sure how the alignment of this list would go, so i just placed it below, should i place it as list items?-->
-    <ul><li>Google Repair</li>
-        <li>Cell Phone Repair</li>
-        <li>Tablet Repair</li>
-        <li>Laptop Repair</li>
-        <li>Computer Repair</li>
-        <li>iPhone Repair</li>
-        <li>Samsung Repair</li>
-        <li>iPad Repair</li>
-        <li>iPod Repair</li>
-        <li>Network Setup</li></ul>
-    <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc. uBreakiFix is an independent service company and is in no way affiliated with Apple Inc.</P>
-</footer>
+        <article>
+            <h2>Printer Services</h2>
+            <img src="../images/serviceHBprinter.jpg" alt="printer repair">
+            <h3>We can provide the following printer support:</h3>
+            <ul>
+                <li>Paper jam</li>
+                <li>Printer head is not working</li>
+                <li>Error code diagnosis</li>
+                <li>Developer/toner issues</li>
+                <li>Change cartridges or "can't find printer head"</li>
+                <li>CIS failure (continuous ink supply)</li>
+                <li>Scanning is very slow</li>
+                <li>Pages are coming out dark</li>
+                <li>Black lines on every scan</li>
+                <li>Middle of the page faded or white</li>
+                <li>Outer edges are black</li>
+            </ul>        
+        </article>
+        
+        <article>
+            <h2>Data Recovery</h2>
+            <img src="../images/serviceHBdata.jpg" alt="data recovery">
+            <h3>Type Of Data Recovery Services We Offer</h3>
+            <p>Lost everything on your hard drive? It is still likely that we can retrieve your valuable files for you. Common files that can be retrieved are: photos,videos, music, favorites, documents, and Microsoft Outlook files.Computer Systems & Data Recovery Services. We'll assess the damage to your hard drive and be transparent about what can be saved. </p>
+                <ul>
+                    <li>Computer Dead – HDD Recovery</li>
+                    <li>Hard Drive Recovery – Hard Drive Failure</li>
+                    <li>Hard Drive Data Recovery Diagnostic Fee</li>
+                    <li>External Hard Drive Data Recovery</li>
+                    <li>Last Resort for HDD Recovery</li>
+                    <li>USB, Flash Memory Card recovery</li>
+                </ul>
+            
+        </article>
+        
+        <article>
+                <h2>Software Support</h2>
+                <img src="../images/service-homebusiness-software1.jpg" alt="software support image">
+                <h3>Need a new Windows installation? We can do it!</h3>
+                <p>Most operating systems are fairly easy to install these days. There have been numerous advances in the Windows platform (now at Windows 10) in which a lot of the hard work is done automatically for you. Yet, there are subtle complexities to any operating system installation. Should you create a new partition? Do you want to format your existing partition? What the heck is a partition? Other software can present similar obstacles and it’s advised that you seek a professional. Some software can actually present a security or privacy threat.</p> 
+ 
+        </article>
+    </div>     <!--end serviceHome wrapper-->
+</main>
+
+<section class="deal">
+    <h3> Please call us for a free quote for installing your software  and/or OS.<br>We promise to give you quality service at a price that is both reasonable and competitive.</h3> 
+</section>   
+
+   
+<footer>
+       
+        <div class="contactWrapper">
+            <h4>Computer Geeks 911</h4>
+            <div class="phone">
+                <img src="../images/phone.svg" alt="phoneicon">
+                <p>858.208.0002</p>
+            </div> <!-- End of phone -->
+            <div class="email">
+                <img src="../images/envelope.svg" alt="emailicon">
+                <a href="mailto:admin@geek911.com">Contact Us</a>
+            </div> <!-- End of email -->
+            <div class="address">
+                <p>
+                    7710 Balboa Ave Suite 223B, San Diego, CA 92111 - Above Subway ( Main Location )
+                </p>
+                <p>
+                    3555 Rosecrans St, San Diego CA 92110 - Next to Rubios​ ( 2nd Main Location )
+                </p>
+                <p>    
+                    3705 Rosecrans St, San Diego CA 92110 - Next to Big Lots
+                </p>
+            </div> <!-- End of address -->
+        </div> <!-- End of contactWrapper -->
+        
+        <div class="rateWrapper">
+            <p>Rate and review us on Google & Yelp</p>
+            <div class="rateicon">
+                <img src="../images/googleIcon.png" alt="gicon" class="icon">
+                <img src="../images/yelpLogo.png" alt="yelpicon" class="icon">
+            </div>
+        
+            <p>&copy;Computer Geeks 911, 2021 All rights reserved</p>
+        </div> <!-- End of rateWrapper -->
+        
+        
+        <div class="serviceWrapper">
+            <h4>GET A QUOTE</h4>
+            <ul>
+                <li>Google Repair</li>
+                <li>Cell Phone Repair</li>
+                <li>Tablet Repair</li>
+                <li>Laptop Repair</li>
+                <li>Computer Repair</li>
+                <li>iPhone Repair</li>
+                <li>Samsung Repair</li>
+                <li>iPad Repair</li>
+                <li>iPod Repair</li>
+                <li>Network Setup</li>
+            </ul>
+            <p>iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc. uBreakiFix is an independent service company and is in no way affiliated with Apple Inc.</p>
+        </div> <!-- End of serviceWrapper -->
+    </footer>
 </body>
 </html>

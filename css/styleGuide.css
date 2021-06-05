@@ -1,0 +1,96 @@
+
+/*
+font-family: 'Roboto', sans-serif;
+
+
+        #801917  Primary Color - Links and buttons	
+		#A5DEFA  Primary Color - Sky Blue 
+		#CFE3F2  Primary Color - Pale Blue
+		#C7D2D7  Primary Color- Light gray 
+		#A19EA5  Primary Color - Grey Body text
+		#1F9CEC  Accent Color - Buttons
+
+*/
+
+
+
+body {
+    background-color: #fff;
+}
+
+.container section {
+    width: 80%;
+    margin: auto;
+}
+
+section ul {
+    display: flex; /*so items sit side by side*/
+    list-style-type: none;
+    margin: 1em 0;
+}
+
+section li {
+    border: solid 1px #999;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.light {
+    background-color: #fffaee;
+    color: #4e385e;
+}
+
+.dark {
+    background-color: #333;
+    color: #ffe68c;
+}
+
+#icons img {
+    width: 80%;
+}
+
+#icons .sgBox{
+    width: 200px;
+    min-height: 200px;
+}
+
+/*Colors*/
+#colors li {
+    width: 150px;
+    height: 180px;
+    /*padding: 0;*/
+}
+
+#colors p {
+    display: block;
+    text-align: center;
+    padding: .2em;
+    background-color: #fff;
+}
+
+#colors li.base {
+    background-color: #801917;
+}
+
+#colors li.yel {
+    background-color: #A5DEFA;
+}
+
+#colors li.blue {
+    background-color: #CFE3F2;
+}
+
+#colors li.purp {
+    background-color: #C7D2D7;
+}
+
+#colors li.red {
+    background-color: #A19EA5;
+}
+
+#colors li.red2 {
+    background-color: #1F9CEC;
+}
+
+
+

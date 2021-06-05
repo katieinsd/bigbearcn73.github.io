@@ -1,0 +1,91 @@
+main h1 {
+    margin-bottom: 15px;
+}
+
+article {
+    padding: 15px;
+}
+
+/*Added a gray background to create continuity in the design   -KR    */
+article div img{
+    box-shadow: -5px 5px #E5E5E5;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+article p {
+    text-align: left;
+    padding: 10px;
+}
+
+/*
+figcaption {
+    font-style: italic;
+}
+*/
+
+/*
+article.brokenscreen {
+    border-bottom: solid 1px #ccc;
+}
+*/
+
+@media screen and (min-width: 764px) {
+    .brokenScreen, .waterPhone {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+/*    is there a cleaner way to do this? -KR*/
+    article p {
+        margin-top: -200px;;
+    }
+}
+
+    
+/*
+    I added another image and changed the text a bit to make it look more modern, which changed the layout -KR
+    
+    article.brokenscreen p {
+        width: 400px;
+        margin-left: 20px;
+    }
+    
+    article.waterphone p {
+        width: 400px;
+        margin-right: 20px;
+    }
+    
+    article.waterPhone {
+        display: grid;
+        grid-template: columns; 2fr 1fr;
+    }
+    
+    
+article.brokenscreen {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    article.waterphone {
+        display: grid;
+        grid-column: auto;
+    }
+    
+ 
+    article.brokenscreen p {
+        width: 400px;
+        margin-left: 20px;
+    }
+
+
+    article.waterphone p {
+        width: 400px;
+        margin-right: 20px;
+    }
+}*/
